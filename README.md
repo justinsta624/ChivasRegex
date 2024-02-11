@@ -102,14 +102,22 @@ This application can be used in conjunction with licensing covered in  <b>MIT Li
 ## Technologies used <a ID="technologies-used"></a>
 
 - **GitHub Gist**: a web-based platform provided by GitHub that allows users to share and manage code snippets, text, or any other type of content in the form of "gists." Key features include:
-* `Version Control` Gists are backed by Git, which means they have version control capabilities. Users can fork, clone, and contribute to gists, just like regular Git repositories.
-* `Online Editing` Users can edit the content of gists directly on the GitHub website. This makes it easy to make quick changes or corrections without having to clone the repository locally.
-* `Embedding` Gists can be embedded in web pages or other online documents, making it simple to showcase code snippets on blogs, documentation, or forums.
-* `Privacy Options` Gists can be either public or private. Public gists are visible to everyone, while private gists are accessible only to the owner and collaborators.
-* `Commenting and Forking` Users can leave comments on gists, facilitating collaboration and discussion. Additionally, others can fork (create their own copy of) gists to make modifications or improvements.
-* `Syntax Highlighting` Gists automatically detect the programming language used in the code and apply syntax highlighting for improved readability.
+</div>
+`Version Control` Gists are backed by Git, which means they have version control capabilities. Users can fork, clone, and contribute to gists, just like regular Git repositories.
+`Online Editing` Users can edit the content of gists directly on the GitHub website. This makes it easy to make quick changes or corrections without having to clone the repository locally.
+`Embedding` Gists can be embedded in web pages or other online documents, making it simple to showcase code snippets on blogs, documentation, or forums.
+`Privacy Options` Gists can be either public or private. Public gists are visible to everyone, while private gists are accessible only to the owner and collaborators.
+`Commenting and Forking` Users can leave comments on gists, facilitating collaboration and discussion. Additionally, others can fork (create their own copy of) gists to make modifications or improvements.
+`Syntax Highlighting` Gists automatically detect the programming language used in the code and apply syntax highlighting for improved readability.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## References
+- [regexone.com](https://regexone.com/)
+- [Learn Regular Expressions in 20 minutes](https://www.youtube.com/watch?v=rhzKDrUiJVk)
+- [regexr](https://regexr.com/)
+- [Regular Expression Tutorial](https://coding-boot-camp.github.io/full-stack/computer-science/regex-tutorial)
+- [8 Regular Expressions You Should Know](https://developer.aliyun.com/article/38054)
 
 ---
 
