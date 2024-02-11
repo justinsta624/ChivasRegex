@@ -16,13 +16,10 @@
 Followings are the outcomes of the challenge 17:
 
 * The URL of the GitHub gist, give the gist a unique name. </br>
-[URL of the GitHub gist](https://polar-journey-77005-c598f31c0871.herokuapp.com/) </br>
+[URL of the GitHub gist](https://gist.github.com/justinsta624/51a6c059eb538222552511239555835b) </br>
 
 * The URL of the GitHub repository, with a unique name and a README describing the project </br>
 [Repository for this challenge](https://github.com/justinsta624/ChivasRegex)
-
-## Screentshot <a ID="screentshot"></a>
-
 
 
 ## Table of contents
