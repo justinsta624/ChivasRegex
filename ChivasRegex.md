@@ -1,10 +1,20 @@
-# Title (replace with your title)
+# ChivasRegex: Tutorial on Matching a URL
 
-Introductory paragraph (replace this with your text)
+Regular expressions, commonly referred to as Regex, constitute a highly valuable and potent tool for extracting information from textual sources, encompassing code, log files, spreadsheets, and documents. Among the myriad applications, a prevalent use case involves the validation and matching of Uniform Resource Locators (URLs).
+
+This tutorial will provide comprehensive guidance on employing Regex to ascertain the adherence of a given string to the standardized URL format.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Within this document, I will elucidate the utilization of a regular expression designed to validate URLs, guaranteeing adherence to a specific pattern:
+
+```regex
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+```
+
+While the sequence of characters may appear cryptic at first glance, it represents a structured assembly of regular expression components, each of which will be thoroughly explored in the subsequent discussion.
+
+Let us delve into the intricacies of each Regex Component, elucidating the process of constructing a robust URL matching pattern using the content provided in this document.
 
 ## Table of Contents
 
@@ -45,5 +55,11 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ### Look-ahead and Look-behind
 
 ## Author
+Copyright (c) 2024 Hanbyeol Lee
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hanbyeol Justin Lee, with his online platforms [GitHub](https://github.com/justinsta624), is currently pursuing a Coding Bootcamp program at the University of Toronto. 
+
+I am independently motivated, and I also appreciate team efforts and collaborating productively within teams. I understand exactly and accurately to help solve issues to prevent wasting time. I depend on accurate data, correct information, and precise numbers.
+
+With years of doing research, presentations and using technology in school and at work, MS tools as Excel, PowerPoint, Word, Sharepoint, Teams and Outlook are essential in my toolbox. And now I'm about to include various coding skills by using various of front-ends & back-ends to perform my tasks, pursuing significant career transition into the Web Development Industry.
+
