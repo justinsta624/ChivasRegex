@@ -4,13 +4,10 @@
 
 # ⭐ Computer Science for JavaScript: Regex Tutorial ⭐
 
-[![Node.js Badge](https://img.shields.io/badge/Node.js-393?style=for-the-badge&logo=nodedotjs&logoColor=fff)](https://nodejs.org/en)
-[![MySQL2 Badge](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![Express Badge](https://img.shields.io/badge/Express-000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-[![Bcrypt Badge](https://img.shields.io/badge/Bcrypt-338?style=for-the-badge&logo=javascript&logoColor=white)](https://www.npmjs.com/package/bcrypt)
-[![Dotenv Badge](https://img.shields.io/badge/Dotenv-000?style=for-the-badge&logo=javascript&logoColor=white)](https://www.npmjs.com/package/dotenv)
-[![Sequelize Badge](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)](https://www.npmjs.com/package/sequelize)
-[![Handlebar Badge](https://img.shields.io/badge/Handlebars%20js-f0772b?style=for-the-badge&logo=handlebarsdotjs&logoColor=black)](https://www.npmjs.com/package/handlebars)
+[![Javascript Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.w3schools.com/js/)
+[![StackOverflow Badge](https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)](https://stackoverflow.com/)
+[![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+[![ShellScript Badge](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.shellscript.sh/)
 
 </div>
 
@@ -32,7 +29,7 @@ Followings are the outcomes of the challenge 17:
 
 - [Task](#task)
 - [User Story](#user-story)
-- [Acceptance Critiera](#acceptance-criteria)
+- [Acceptance Criteria](#acceptance-criteria)
 - [About Regex](#about-regex)
 - [License](#license)
 - [Technologies Used](#technologies-used)
@@ -61,7 +58,10 @@ SO THAT I can understand the search pattern the regex defines
 ```md
 GIVEN a regex tutorial
 WHEN I open the tutorial
-THEN I see a descriptive title and introductory paragraph explaining the purpose of the tutorial, a summary describing the regex featured in the tutorial, a table of contents linking to different sections that break down each component of the regex and explain what it does, and a section about the author with a link to the author’s GitHub profile
+THEN I see a descriptive title and introductory paragraph explaining the purpose of the tutorial,
+a summary describing the regex featured in the tutorial, a table of contents linking to different
+sections that break down each component of the regex and explain what it does, and a section about
+the author with a link to the author’s GitHub profile
 WHEN I click on the links in the table of contents
 THEN I am taken to the corresponding sections of the tutorial
 WHEN I read through each section of the tutorial
@@ -101,17 +101,13 @@ This application can be used in conjunction with licensing covered in  <b>MIT Li
 
 ## Technologies used <a ID="technologies-used"></a>
 
-- **Node.js**: Runtime environment for executing server-side JavaScript code.
-- **Express**: Web application framework for building RESTful APIs.
-- **Express-Handlebars**: Template engine for rendering HTML templates.
-- **Express-Session**: Middleware for managing user sessions.
-- **MySQL2**: MySQL database driver for Node.js.
-- **Sequelize**: Promise-based ORM for interacting with databases.
-- **Bcrypt**: Library for securely hashing passwords.
-- **Dotenv**: Utility for loading environment variables.
-- **JawsDB**: Providing managed MySQL databases, ideal for scalable web applications.
-- **Heroku**: A cloud platform that offers easy deployment and management of web applications.
-- **Nodemon**: Development tool for auto-reloading the server during development.
+- **GitHub Gist**: a web-based platform provided by GitHub that allows users to share and manage code snippets, text, or any other type of content in the form of "gists." Key features include:
+* `Version Control` Gists are backed by Git, which means they have version control capabilities. Users can fork, clone, and contribute to gists, just like regular Git repositories.
+* `Online Editing` Users can edit the content of gists directly on the GitHub website. This makes it easy to make quick changes or corrections without having to clone the repository locally.
+* `Embedding` Gists can be embedded in web pages or other online documents, making it simple to showcase code snippets on blogs, documentation, or forums.
+* `Privacy Options` Gists can be either public or private. Public gists are visible to everyone, while private gists are accessible only to the owner and collaborators.
+* `Commenting and Forking` Users can leave comments on gists, facilitating collaboration and discussion. Additionally, others can fork (create their own copy of) gists to make modifications or improvements.
+* `Syntax Highlighting` Gists automatically detect the programming language used in the code and apply syntax highlighting for improved readability.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
