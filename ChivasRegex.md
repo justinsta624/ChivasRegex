@@ -4,6 +4,8 @@ Regular expressions, commonly referred to as Regex, constitute a highly valuable
 
 This tutorial will provide comprehensive guidance on employing Regex to ascertain the adherence of a given string to the standardized URL format.
 
+<script src="https://gist.github.com/justinsta624/51a6c059eb538222552511239555835b.js"></script>
+
 ## Summary
 
 Within this document, I will elucidate the utilization of a regular expression designed to validate URLs, guaranteeing adherence to a specific pattern:
@@ -61,7 +63,7 @@ Breakdown of the provided regex:
 The OR operator, denoted by the vertical bar `|`, specifies alternatives within a pattern, allowing the matching of one pattern or another.
 
 ### Character Classes
-Character classes in regex allow the literal matching of specific characters, bypassing their special meanings. Common examples include:
+Character classes(escape) in regex allow the literal matching of specific characters, bypassing their special meanings. Common examples include:
 
   - `\.` (Escapes the dot (.) character) - it matches a literal dot instead of its special meaning, which is to match any character (except newline) in regular expressions.
 
@@ -73,7 +75,7 @@ Character classes in regex allow the literal matching of specific characters, by
 
   - `\d, \w, \s` These are shorthand character classes that match digits (\d), word characters (\w), and whitespace characters (\s), respectively. They are used as escapes to represent these predefined character classes.
 
-Using character escapes enables the precise matching of characters without interpreting their special meanings within the regex syntax.
+Using character classes(escape) enables the precise matching of characters without interpreting their special meanings within the regex syntax.
 
 ### Flags
 Flags, optional parameters appended to the regex, modify pattern matching behavior, altering how the pattern is interpreted or applied.
