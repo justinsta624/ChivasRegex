@@ -103,13 +103,14 @@ This application can be used in conjunction with licensing covered in  <b>MIT Li
 
 - **GitHub Gist**: a web-based platform provided by GitHub that allows users to share and manage code snippets, text, or any other type of content in the form of "gists." Key features include:
 </div>
-`Version Control` Gists are backed by Git, which means they have version control capabilities. Users can fork, clone, and contribute to gists, just like regular Git repositories.
-`Online Editing` Users can edit the content of gists directly on the GitHub website. This makes it easy to make quick changes or corrections without having to clone the repository locally.
-`Embedding` Gists can be embedded in web pages or other online documents, making it simple to showcase code snippets on blogs, documentation, or forums.
-`Privacy Options` Gists can be either public or private. Public gists are visible to everyone, while private gists are accessible only to the owner and collaborators.
-`Commenting and Forking` Users can leave comments on gists, facilitating collaboration and discussion. Additionally, others can fork (create their own copy of) gists to make modifications or improvements.
-`Syntax Highlighting` Gists automatically detect the programming language used in the code and apply syntax highlighting for improved readability.
 
+`Version Control` Gists are backed by Git, which means they have version control capabilities. Users can fork, clone, and contribute to gists, just like regular Git repositories. </div>
+`Online Editing` Users can edit the content of gists directly on the GitHub website. This makes it easy to make quick changes or corrections without having to clone the repository locally. </div>
+`Embedding` Gists can be embedded in web pages or other online documents, making it simple to showcase code snippets on blogs, documentation, or forums. </div>
+`Privacy Options` Gists can be either public or private. Public gists are visible to everyone, while private gists are accessible only to the owner and collaborators. </div>
+`Commenting and Forking` Users can leave comments on gists, facilitating collaboration and discussion. Additionally, others can fork (create their own copy of) gists to make modifications or improvements. </div>
+`Syntax Highlighting` Gists automatically detect the programming language used in the code and apply syntax highlighting for improved readability. </div>
+ 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## References
