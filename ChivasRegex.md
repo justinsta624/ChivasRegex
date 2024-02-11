@@ -4,8 +4,6 @@ Regular expressions, commonly referred to as Regex, constitute a highly valuable
 
 This tutorial will provide comprehensive guidance on employing Regex to ascertain the adherence of a given string to the standardized URL format.
 
-<script src="https://gist.github.com/justinsta624/51a6c059eb538222552511239555835b.js"></script>
-
 ## Summary
 
 Within this document, I will elucidate the utilization of a regular expression designed to validate URLs, guaranteeing adherence to a specific pattern:
