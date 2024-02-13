@@ -4,8 +4,6 @@ Regular expressions, commonly referred to as Regex, constitute a highly valuable
 
 This tutorial will provide comprehensive guidance on employing Regex to ascertain the adherence of a given string to the standardized URL format.
 
-<script src="https://gist.github.com/justinsta624/51a6c059eb538222552511239555835b.js"></script>
-
 ## Summary
 
 Within this document, I will elucidate the utilization of a regular expression designed to validate URLs, guaranteeing adherence to a specific pattern:
@@ -22,25 +20,39 @@ Let us delve into the intricacies of each Regex Component, elucidating the proce
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
+- [Lazy and Greedy Match](#lazy-and-greedy-match)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
-Initiating the creation of a series of expressions requires commencing with a / and concluding at the end of the string. For instance:
+
+Initiating the creation of a series of expressions requires commencing with a `/` and concluding at the end of the string. For instance:
 
 `/ChivasRegex/`
 
 ### Anchors
-The characters ^ and $ function as anchors, employed to match the start and end of a string, respectively.
+
+The characters `^` and `$` function as anchors, employed to match the start and end of a string, respectively.
+
+### Boundaries
+
+In regex, boundaries are used to define the start and end points of a match within a string. The anchors `^` and `$` are commonly used for this purpose.
+
+```regex 
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+```
+
+- `^` asserts the start of the string, ensuring that the URL begins as intended.
+- `$` asserts the end of the string, ensuring that the URL concludes according to the specified pattern.
+These boundaries help to validate the entire string against the defined URL structure.
 
 ### Quantifiers
+
 Quantifiers permit the specification of how frequently a particular regex string should match. Two variants exist: lazy and greedy. By default, regex matching is eager, seeking to match as much as possible. This behavior may not always be desired. Lazy quantifiers restrict the matched content. Quantifiers include:
 
 - `+` matches the pattern one or more times.
@@ -59,25 +71,41 @@ Breakdown of the provided regex:
 - `([\/\w \.-]*)*` captures optional path segments, query parameters, or fragments, allowing any character from the set [/, \w (alphanumeric), space, dot, hyphen].
 - `\/?` matches an optional trailing slash.
 
+### Lazy and Greedy Match
+
+```Lazy Quantifiers
+([\/\w \.-]*?)*
+```
+This change makes the quantifier match as little as possible, ensuring it captures the smallest valid portion. In the context of URLs, this can be useful when you want to match the shortest possible path segment or query parameter.
+
+
+```Greedy Quantifiers
+([\/\w \.-]*)*
+```
+The * quantifier is used to match zero or more occurrences of the characters within the character class. It is greedy by default, meaning it will try to match as many characters as possible. In the context of URLs, this allows flexibility in capturing path segments, query parameters, or fragments.
+
 ### OR Operator
+
 The OR operator, denoted by the vertical bar `|`, specifies alternatives within a pattern, allowing the matching of one pattern or another.
 
 ### Character Classes
+
 Character classes(escape) in regex allow the literal matching of specific characters, bypassing their special meanings. Common examples include:
 
-  - `\.` (Escapes the dot (.) character) - it matches a literal dot instead of its special meaning, which is to match any character (except newline) in regular expressions.
+  - `\.` (Escapes the dot `(.)` character) - it matches a literal dot instead of its special meaning, which is to match any character (except newline) in regular expressions.
 
-  - `\/` (Escapes the forward slash (/) character) - it matches a literal forward slash instead of its special meaning, which is often used as a delimiter in regular expressions.
+  - `\/` (Escapes the forward slash `(/)` character) - it matches a literal forward slash instead of its special meaning, which is often used as a delimiter in regular expressions.
 
-  - `\\` (Escapes the backslash (\) character) -  it matches a literal backslash instead of its special meaning as an escape character.
+  - `\\` (Escapes the backslash `(\)` character) -  it matches a literal backslash instead of its special meaning as an escape character.
 
-  - `\+, \-, \*, etc.` (Escapes special characters like +, -, *, etc.) - it is to match them literally instead of their special meanings in regular expressions.
+  - `\+, \-, \*, etc.` (Escapes special characters like `+`, `-`, `*`, `etc.`) - it is to match them literally instead of their special meanings in regular expressions.
 
-  - `\d, \w, \s` These are shorthand character classes that match digits (\d), word characters (\w), and whitespace characters (\s), respectively. They are used as escapes to represent these predefined character classes.
+  - `\d, \w, \s` These are shorthand character classes that match digits `(\d)`, word characters `(\w)`, and whitespace characters `(\s)`, respectively. They are used as escapes to represent these predefined character classes.
 
 Using character classes(escape) enables the precise matching of characters without interpreting their special meanings within the regex syntax.
 
 ### Flags
+
 Flags, optional parameters appended to the regex, modify pattern matching behavior, altering how the pattern is interpreted or applied.
 
 ### Grouping and Capturing
@@ -108,15 +136,19 @@ The grouped regex for the provided example:
   [\da-z\.-] [a-z\.] {2,6} [\/\w \.-]
 ```
 
-### Greedy and Lazy Match
-
-### Boundaries
-
 ### Back-references
 
-### Look-ahead and Look-behind
+Back-references in regex allow referencing previously captured groups within the pattern. They are denoted by \ followed by the group number. However, the provided URL regex doesn't utilize back-references.
+
+For example, a back-reference could be used to ensure that the opening and closing tags in an HTML document match:
+
+```regex 
+<(div|p)>(.*?)<\/\1>
+```
+In this case, `\1` references the first captured group `(div|p)`.
 
 ## Author
+
 Copyright (c) 2024 Hanbyeol Lee
 
 Hanbyeol Justin Lee, with his online platforms [GitHub](https://github.com/justinsta624), is currently pursuing a Coding Bootcamp program at the University of Toronto. 
