@@ -82,7 +82,7 @@ This change makes the quantifier match as little as possible, ensuring it captur
 ```Greedy Quantifiers
 ([\/\w \.-]*)*
 ```
-The * quantifier is used to match zero or more occurrences of the characters within the character class. It is greedy by default, meaning it will try to match as many characters as possible. In the context of URLs, this allows flexibility in capturing path segments, query parameters, or fragments.
+The `*` quantifier is used to match zero or more occurrences of the characters within the character class. It is greedy by default, meaning it will try to match as many characters as possible. In the context of URLs, this allows flexibility in capturing path segments, query parameters, or fragments.
 
 ### OR Operator
 
@@ -106,7 +106,38 @@ Using character classes(escape) enables the precise matching of characters witho
 
 ### Flags
 
-Flags, optional parameters appended to the regex, modify pattern matching behavior, altering how the pattern is interpreted or applied.
+Flags, optional parameters appended to the regex, modify pattern matching behavior, altering how the pattern is interpreted or applied. They are appended to the end of the regex and are usually represented by a single letter. 
+
+- `i` (Case-Insensitive):
+`/regex/i`
+This flag makes the pattern case-insensitive, allowing it to match uppercase and lowercase letters interchangeably. For example, `/abc/i` would match "abc", "AbC", "aBC", etc.
+
+- `g` (Global Match):
+`/regex/g`
+This flag enables global matching, meaning the regex will find all matches within the input string rather than stopping after the first match.
+
+- `m` (Multiline):
+`/regex/m`
+In multiline mode, the `^` and `$` anchors match the start and end of each line within the input string, rather than the start and end of the entire string.
+
+- `u` (Unicode):
+`/regex/u`
+This flag is used when working with Unicode strings. It ensures that Unicode characters are treated correctly by the regex engine.
+
+- `s` (DotAll):
+`/regex/s`
+In DotAll mode, the dot `.` in the regex matches any character, including newline characters `(\n)`.
+
+- `x` (Extended):
+`/regex/x`
+In extended mode, whitespace and comments are ignored within the regex pattern, allowing for a more readable format.
+
+Using the case-insensitive flag `(/regex/i)` to match URLs regardless of case. 
+The global match flag `(/regex/g)` to use multiple URLs in the input text.
+
+```regex 
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/ig
+```
 
 ### Grouping and Capturing
 
@@ -127,9 +158,9 @@ Bracket expressions, or character classes, enable the definition of a set or ran
 
 A few special characters have special meanings within brackets include:
 
-- Hyphen (-): Specifies a character range. For example, `[a-z]` matches any lowercase letter.
-- Caret (^): When used as the first character inside the brackets, it negates the character set. For example, `[^0-9]` matches any character that is not a digit.
-- Backslash (\): Escapes a special character inside the bracket expression.
+- Hyphen `(-)`: Specifies a character range. For example, `[a-z]` matches any lowercase letter.
+- Caret `(^)`: When used as the first character inside the brackets, it negates the character set. For example, `[^0-9]` matches any character that is not a digit.
+- Backslash `(\)`: Escapes a special character inside the bracket expression.
 
 The grouped regex for the provided example:
 ```regex 
@@ -151,8 +182,8 @@ In this case, `\1` references the first captured group `(div|p)`.
 
 Copyright (c) 2024 Hanbyeol Lee
 
-Hanbyeol Justin Lee, with his online platforms [GitHub](https://github.com/justinsta624), is currently pursuing a Coding Bootcamp program at the University of Toronto. 
+Hanbyeol Justin Lee, with my [GitHub](https://github.com/justinsta624), is currently pursuing a Coding Bootcamp program at the University of Toronto. 
 
-I am independently motivated, and I also appreciate team efforts and collaborating productively within teams. I understand exactly and accurately to help solve issues to prevent wasting time. I depend on accurate data, correct information, and precise numbers.
+I am independently motivated, also appreciate team efforts and collaborate productively within teams. I understand exactly and accurately to help solve issues to prevent wasting time. I depend on accurate data, correct information, and precise numbers.
 
-With years of doing research, presentations and using technology in school and at work, MS tools as Excel, PowerPoint, Word, Sharepoint, Teams and Outlook are essential in my toolbox. And now I'm about to include various coding skills by using various of front-ends & back-ends to perform my tasks, pursuing significant career transition into the Web Development Industry.
+With years of doing research, presentations and using technology in school and at work, MS office as Excel, PowerPoint, Word, Sharepoint, Teams and Outlook are essential in my toolbox. I'm about to include various coding skills by using various of front & back-ends to perform my tasks, pursuing significant career transition into the Web Development Industry.
