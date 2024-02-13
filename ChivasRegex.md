@@ -88,6 +88,16 @@ The `*` quantifier is used to match zero or more occurrences of the characters w
 
 The OR operator, denoted by the vertical bar `|`, specifies alternatives within a pattern, allowing the matching of one pattern or another.
 
+```regex
+(https?:\/\/)?
+```
+The question mark `?` after the group indicates that the entire group `(https?:\/\/)` is optional. This group captures the scheme part of the URL, allowing for either `"https://"`. It effectively functions as an OR operator, indicating that the URL may start with `"https://"`, or it may start with nothing at all.
+
+```regex
+\.([a-z\.]{2,6})
+```
+This group allows for two to six lowercase letters or dots. It serves as a simplified representation of various TLD (Top-Level Domain) possibilities. The dot before the character class `([a-z\.])` indicates the OR operator, allowing for either a dot or a lowercase letter.
+
 ### Character Classes
 
 Character classes(escape) in regex allow the literal matching of specific characters, bypassing their special meanings. Common examples include:
